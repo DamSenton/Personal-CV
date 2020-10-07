@@ -1,38 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@300;400;500;600&display=swap');
 
+body{
+    font-family: Open-Sans, sans-serif;
+    color: #777777;
+    background-color: #fafafa;
+    padding: 0;
+    margin: 0;
+}
+
+h2{
+font-family: Raleway, sans-serif;
+text-transform: uppercase;
+color: #333333;
+}
+
 /*-------------------------------- Page colours -----------------------------------*/
 
-.bg-color-name-title {
-    background-color: #676767;
-}
-
-.bg-color-three-reasons {
-    background-color: #ffffff;
-}
-
-.bg-color-personal-info {
-    background-color: #f4f4f4;
-}
-
-.bg-color-skills {
-    background-color: #ffffff;
-}
-
-.bg-color-work-history {
-    background-color: #9b59b6;
-}
-
-.bg-color-contact {
-    background-color: #ffffff;
-}
-
-.bg-color-conferences {
-    background-color: #f4f4f4;
-}
-
-.bg-color-groups {
-    background-color: #ffffff;
-}
 
 .ui-menu-color-home {
     background-color: #e67e22;
@@ -50,15 +33,125 @@
     background-color: #d9a81d;
 }
 
+/*--------------------------- Naviagtion -----------------------*/
 
-.ui-menu-color-github {
-    background-color: #1c4a6c;
+
+
+/*----------------------------- Main Content ----------*/
+
+
+header{
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
-.ui-menu-color-interests {
-    background-color: #e74c3c;
+.container{
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
-body{
-    font-family: Raleway, sans-serif;
+.hero-outer{
+  overflow: hidden;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  z-index: 0;
+  background-size: cover;
+  margin: 0;
+}
+
+.hero-image{
+   background: url("../images/neutral-background.jpg") center center no-repeat;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+  
+}
+
+/*-----------------------------Cover text ------------------*/
+
+.cover-text-box{
+bottom: 10%;
+left: 35%;
+  margin: 0 auto;
+  position: absolute;
+  contain: content;
+  text-align: center;
+  
+}
+
+.cover-text-header {
+  color: #000;
+  font-family: "Raleway";
+  position: relative;
+}
+
+.cover-text-content {
+  color: #800000;
+  font-family: "Open Sans";
+  position: relative;
+  padding-bottom: 5px;
+  font-size: 300;
+}
+
+  .cover-text-header,
+  .cover-text-content {
+    font-size: 4vmin;
+  }
+
+
+#nav {
+    margin: 0;
+}
+
+#nav li {
+    padding: 0;
+}
+
+.menucontainer{
+    display: flex;
+}
+
+.menuitem {
+    height: 120px;
+    text-align: center;
+    padding: 0;
+}
+
+.menuitem a {
+    width: 100%;
+    text-decoration: none;
+    color: #ffffff;
+    height: 120px;
+}
+
+
+.menuitem a i {
+    padding-top: 22px;
+    display: block;
+    color: #fafafa;
+    font-size: 26px;
+}
+
+.menuitem span {
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+
+/*--------------------------------------------Hover.css*/
+
+.hvr-sweep-to-bottom:before {
+    background: rgba(0, 0, 0, 0.2);
+    height: 120px;
 }
